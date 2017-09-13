@@ -26,4 +26,3 @@ echo
 echo ../bin/mergetFasta -i list_tfastas.txt -o merged
 ../bin/mergetFasta -i list_tfastas.txt -o merged
 echo
-

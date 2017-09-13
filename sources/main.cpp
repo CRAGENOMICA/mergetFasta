@@ -18,7 +18,7 @@
 #include <string>
 #include <vector>
 #include "zutil.h"
-//#include "zindex.h"
+#include "zindex.h"
 #include "CStringTools.h"
 #include "CTFasta.h"
 #include "File.h"
@@ -27,8 +27,8 @@ void help(std::string name) {
     std::cerr << "Merge_tFastas\n"
             << "Usage: ./merge_tfastas -i list_tFastas.txt -o outputname\n"
             << "Options:\n"
-            << "\t-h\t\tShow this help message\n"
-            << "\t-i\t\tList with the name of all tFasta to merge (and the path to each file if they were not in the same directory of program)\n"
+            << "\t-h\t\tHelp and exit\n"
+            << "\t-i\t\tList with the name of all tFasta to merge (with the path to each file if they were not in the same directory of program)\n"
             << "\t-o\t\tOutput compressed tFasta filename (without extension)\n"
             << std::endl;
 }
@@ -112,7 +112,7 @@ int main(int argc, char** argv) {
     std::vector<std::string> linetfa;
     std::vector<std::string> linetfa_pos;
     std::vector<std::string> typeline;
-
+    
     CTFasta tfasta_group_0(tfastas_vector[0]);
     CTFasta tfasta_group_1(tfastas_vector[1]);
     CTFasta out_tfasta(outtfasta);
