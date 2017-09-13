@@ -62,11 +62,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/merge_tfastas
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/mergetFasta
 
-${CND_DISTDIR}/merge_tfastas: ${OBJECTFILES}
+${CND_DISTDIR}/mergetFasta: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}
-	${LINK.cc} -o ${CND_DISTDIR}/merge_tfastas ${OBJECTFILES} ${LDLIBSOPTIONS} -lz -l:libboost_iostreams.a
+	${LINK.cc} -o ${CND_DISTDIR}/mergetFasta ${OBJECTFILES} ${LDLIBSOPTIONS} -lz -l:libboost_iostreams.a
 
 ${OBJECTDIR}/CStringTools.o: ${CND_SOURCES}/CStringTools.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -104,7 +104,7 @@ ${OBJECTDIR}/zutil.o: ${CND_SOURCES}/zutil.c
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/merge_tfastas
+	${RM} ${CND_DISTDIR}/mergetFasta
 
 # Subprojects
 .clean-subprojects:

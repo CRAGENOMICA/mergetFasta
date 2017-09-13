@@ -66,7 +66,7 @@ LDLIBSOPTIONS=
 
 ${CND_DISTDIR}/mergetFasta: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}
-	${LINK.cc} -o ${CND_DISTDIR}/mergetFasta ${OBJECTFILES} ${LDLIBSOPTIONS} -lz -l:libboost_iostreams.a
+	${LINK.cc} -o ${CND_DISTDIR}/mergetFasta ${OBJECTFILES} ${LDLIBSOPTIONS} -lz
 
 ${OBJECTDIR}/CStringTools.o: ${CND_SOURCES}/CStringTools.cpp 
 	${MKDIR} -p ${OBJECTDIR}
