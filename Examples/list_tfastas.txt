@@ -1,2 +1,2 @@
-example_1.tfa.gz
-pileup_1.tfa.gz
+/home/jordi/Desktop/mstatspop_GUI/bin/mergetFasta/Examples/example_1.tfa.gz
+/home/jordi/Desktop/mstatspop_GUI/bin/mergetFasta/Examples/pileup_1.tfa.gz
